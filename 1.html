@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>html2word</title>
+
+<body>
+<a class="word-export" href="javascript:void(0)"> 导出word</a>
+<div id="page-content">
+          <h1>jquery  测试</h1>
+	 <hr/>
+	 <br/>
+	 <p>哈哈哈哈</p>
+</div>
+ 
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="FileSaver.js"></script>
+<script type="text/javascript" src="jquery.wordexport.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $("a.word-export").click(function(event) {
+            $("#page-content").wordExport('1');
+        });
+    });
+</script>
+ 
+</body>
+
+</html>
